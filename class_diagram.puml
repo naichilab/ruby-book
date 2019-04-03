@@ -1,0 +1,14 @@
+@startuml
+
+class Gear {
+    + ratio()
+    + gear_inches()
+}
+class Wheel {
+    + diameter()
+    + circumference()
+}
+
+Gear --> Wheel
+
+@enduml
