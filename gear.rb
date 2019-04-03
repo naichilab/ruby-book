@@ -17,7 +17,11 @@ class Gear
 
   def gear_inches
     # タイヤはリムの周りを囲むので直径を計算するときは２倍する
-    ratio * (rim + (tire * 2))
+    ratio * diameter
+  end
+
+  def diameter
+    rim + (tire * 2)
   end
 
 end
